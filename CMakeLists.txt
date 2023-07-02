@@ -3,10 +3,11 @@ cmake_minimum_required(VERSION 3.18)
 project(small_clang)
 
 add_subdirectory(lexer)
+add_subdirectory(parser)
 
 add_executable(${PROJECT_NAME} main.cpp)
 
-target_link_libraries(${PROJECT_NAME} lexer)
+target_link_libraries(${PROJECT_NAME} lexer parser)
 
 add_definitions(-Wall)
 

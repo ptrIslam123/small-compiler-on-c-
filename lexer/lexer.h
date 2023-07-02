@@ -4,7 +4,7 @@
 
 #include <string>
 #include <string_view>
-#include <list>
+#include <vector>
 #include <optional>
 
 namespace front {
@@ -13,7 +13,7 @@ namespace lexer {
     
 class Lexer final {
 public:
-    using ContainerType = std::list<Token>;
+    using ContainerType = std::vector<Token>;
     using PosType = std::string::size_type;
 
     explicit Lexer();
